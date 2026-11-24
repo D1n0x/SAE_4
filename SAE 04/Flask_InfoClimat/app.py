@@ -12,10 +12,10 @@ import pymysql.cursors
 def get_db():
     if 'db' not in g:
         g.db =  pymysql.connect(
-            host="localhost",                 # à modifier
-            user="login",                     # à modifier
+            host="serveurmysql.iut-bm.univ-fcomte.fr",                 # à modifier
+            user="aderardj",                     # à modifier
             password="secret",                # à modifier
-            database="BDD_s1_tp",             # à modifier
+            database="BDD_s1_aderardj",             # à modifier
             charset='utf8mb4',
             cursorclass=pymysql.cursors.DictCursor
         )
